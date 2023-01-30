@@ -1,0 +1,11 @@
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+    background-color: whitesmoke;
+}

@@ -1,0 +1,66 @@
+<section class="section-alta-form">
+    <header class="section-alta-form__header">
+        <h1 class="section-alta-form__header-tittle">¿Qué quieres vender?</h1>
+    </header>
+
+    <form action="/productRegister" class="form">
+        <fieldset class="form__general-info">
+            <legend class="form__general-info-legend">Información general:</legend>
+            <div class="form__name-field">
+                <label for="name">Nombre:*</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form__price-field">
+                <label for="price">Precio:*</label>
+                <input type="number" id="price">
+            </div>
+            <div class="form__stock-field">
+                <label for="stock">Stock:*</label>
+                <input type="number" id="stock">
+            </div>
+            <div class="form__brand-field">
+                <label for="brand">Marca:*</label>
+                <input type="text" id="brand">
+            </div>
+            <div class="form__category-field">
+                <label for="category">Categoria:*</label>
+                <input type="text" id="category">
+            </div>
+        </fieldset>
+        <fieldset class="form__description-info">
+            <legend class="form__description-info-legend">Descripciones:</legend>
+            <div class="form__short-description-field">
+                <label for="shortDescription">Descripcion corta:*</label>
+                <input type="text" id="shortDescription">
+            </div>
+            <div class="form__long-description-field">
+                <label for="longDescription">Descripcion larga:*</label>
+                <textarea id="longDescription" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <fieldset class="form__shipping-info">
+            <div>Envío sin cargo:</div>
+            <input type="radio" class="form__shipping-option" name="shipping" value="Sí"> Sí
+            <input type="radio" class="form__shipping-option" name="shipping" value="No"> No
+        </fieldset>
+        <fieldset class="form__age-info">
+            <legend class="form__age-info-lengend">Edades:</legend>
+            <div class="form__min-age-field">
+                <label for="minAge">Edad desde:*</label>
+                <input type="number" id="minAge">
+            </div>
+            <div class="form__max-age-field">
+                <label for="maxAge">Edad hasta:</label>
+                <input type="number" id="maxAge">
+            </div>
+        </fieldset>
+        <fieldset class="form__product-image">
+            <label for="productImage"></label>
+            <input type="file" id="productImage">
+        </fieldset>
+        <div class="form__button-container">
+            <input type="submit" value="Publicar">
+        </div>
+        
+    </form>
+</section>
