@@ -39,7 +39,6 @@ app.use(express.static('public'));
 
 //Validaciones de la inscripcion de productos
 const {body, validationResult} = require('express-validator');
-const {exists} = require('fs');
 
 app.post('/productRegister', [
     body('name', 'Ingrese nombre del producto')
@@ -91,64 +90,5 @@ app.listen(port, ()=>{
     console.log(`app escuchando en puerto ${port}`);
 });
 
-// const getIdFromHash = () => {
-//     const defaultPage = 'inicio';
-//     let id = location.hash.slice(1);
-//     console.log(id);
-//     if (id[0] === '/') {
-//         id = id.slice(1);
-//         console.log(id);
-//     }
-//     return id || defaultPage;
-// };
 
-// const getPageLink = id => `paginas/${id}.html`;
-
-// const initiatePage = () => {
-//     loadDefaultPage();
-// };
-
-// const loadDefaultPage = () => {
-//     const id = getIdFromHash();
-//     loadPageContent(id);
-// };
-
-// const loadPageContent = async (id) =>{
-//     const pageLink = getPageLink(id);
-//     // console.log(pageLink);
-
-
-//     const mainContent = await fetch(pageLink)
-//     .then((response) => response.text())
-//     .catch(error => console.error(`Error: `, error))
-//     .then((text) => {main.innerHTML = text})
-//     // .finally(() => console.warn(`Request ended`))
-    
-    
-//     if (pageLink === `paginas/inicio.html`) {
-//         document.title = pageInfo["/"].title;
-       
-//     } else if (pageLink === `paginas/alta.html`) {
-//         document.title = pageInfo["/alta"].title;
-//     } else if (pageLink === `paginas/contacto.html`) {
-//         document.title = pageInfo["/contacto"].title;
-//     } else if (pageLink === `paginas/nosotros.html`) {
-//         document.title = pageInfo["/nosotros"].title;
-//     } else {
-//         document.title = pageTitle;
-//     };
-
-        
-// };
-
-// window.addEventListener('hashchange', e => {
-//     const id = getIdFromHash();
-//     // console.log(id);
-
-//     loadPageContent(id);
-
-// });
-
-
-// initiatePage();
 
