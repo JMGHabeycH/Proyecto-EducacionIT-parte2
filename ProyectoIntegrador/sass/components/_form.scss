@@ -1,0 +1,102 @@
+.form{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 20px;
+    align-items: center;
+    & fieldset{
+        border-radius: 15px; 
+        background-color: #68F260;
+        width: 100%;
+        @media (min-width: 768px){
+            width: 540px;
+        }
+        
+    }
+
+    & legend{
+        font-weight: bold;
+    }
+
+    & div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    & input {
+        border: 1px solid gray;
+        border-radius: 15px;
+    }
+
+    & textarea{
+        border: 1px solid gray;
+        border-radius: 15px;
+    }
+
+    // &__general-info{
+             
+    // }
+
+    // &__description-info{
+
+    // }
+
+    // &__shipping-info{
+
+    // }
+
+    // &__age-info{
+
+    // }
+
+    // &__product-image{
+
+    // }
+
+    &__button-container{
+        width: 100%;
+        text-align: end;
+
+        @media (min-width:768px){
+            width: 540px;
+        }
+    }
+
+    // &__name-field{
+        
+    // }
+
+    // &__price-field{
+        
+    // }
+
+    // &__stock-field{
+        
+    // }
+
+    // &__brand-field{
+        
+    // }
+
+    // &__category-field{
+        
+    // }
+
+    // &__short-description-field{
+        
+    // }
+
+    // &__long-description-field{
+        
+    // }
+
+    // &__min-age-field{
+        
+    // }
+
+    // &__max-age-field{
+        
+    // }
+}

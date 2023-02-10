@@ -1,0 +1,30 @@
+//Para hacer funcionar sass, escribo en la carpeta del proyecto en el powershell, sass archivo-origen(direccion del archivo) archivo-destino(su direccion dentro de la carpeta)
+//Para que se guarde todo correctamente y se actualice en tiempo real agrego -w
+//sass .\sass\main.scss .\public\css\main.css
+// https://coolors.co/palette/b7ef28-2d078e-d733e0-68f260-6b37ef
+//abstracts
+
+//vendors
+
+//base
+@use 'base/reset';
+@use 'base/normalize';
+
+//layout
+@use 'layout/main-footer';
+@use 'layout/hamburger-button';
+@use 'layout/main-header';
+@use 'layout/main-nav-toggle';
+@use 'layout/main-nav';
+//components
+@use 'components/brand';
+@use 'components/card';
+@use 'components/form';
+@use 'components/shopping-cart';
+@use 'components/cartItem';
+//pages
+@use 'pages/index';
+@use 'pages/alta';
+@use 'pages/contacto';
+@use 'pages/nosotros';
+//themes

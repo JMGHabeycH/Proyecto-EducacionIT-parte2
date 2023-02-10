@@ -1,0 +1,130 @@
+
+.card{
+    max-width: 20em;
+    // flex-grow: 1;
+    box-shadow: 
+    1px 3px 5px rgba(0, 0, 0, 0.2),
+    0 0 8px rgba(0, 0, 0, .05);
+    border-radius: 5px 5px 0 0;
+    transition: all .2s;
+    width: 250px;
+    height: 280px;
+    // background-color: white;
+    position: relative;
+
+    @media (min-width: 500px){
+        height: 360px;
+    }
+    
+
+    &:hover{
+        transform: scale(1.10);
+        transform-origin: bottom;
+        // background-color: orange;
+        height: 360px;
+        .card__info{
+            opacity: 1;
+        }
+
+        .card__link-add-to-cart{
+            display: block;
+        }
+        
+    }
+
+
+    &__link-add-to-cart{
+        display: none;
+        background-image: url(/img/logotipos/buy.png);
+        height: 50px;
+        width: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        right: 0;
+        opacity: .2;
+    }
+
+    &__article{
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 320px){
+            
+        }
+
+        @media (min-width: 500px){
+            
+        }
+    }
+    
+    &__image-container{
+        background: white;
+        border-bottom: 2px solid whitesmoke;
+        height: 13em;
+
+        @media (min-width: 320px){
+            width: 100%;
+        }
+
+        // @media (min-width: 500px){
+        //     width: 100%;
+        // }
+    }
+    
+    &__image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &:nth-child(5n + 1){
+        background-color: #2D078E;
+    }
+
+    &:nth-child(5n + 2){
+        background-color: #B7EF28;
+    }
+
+    &:nth-child(5n + 3){
+        background-color: #6B37EF;
+    }
+
+    &:nth-child(5n + 4){
+        background-color: #D733E0;
+    }
+
+    &:nth-child(5n + 5){
+        background-color: #68F260;
+    }
+
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        
+    }
+
+    &__info{
+        opacity: 0;
+        
+        @media (min-width: 500px){
+            opacity: 1;
+        }
+    }
+
+    &__description{
+        margin-top: 0;
+        margin-left: 15px;
+        color: white;
+    }
+    
+    
+
+}
+
+
+
+

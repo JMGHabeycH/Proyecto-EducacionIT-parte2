@@ -1,0 +1,19 @@
+.about-us{
+    margin: 0 15%;
+
+    &__header{
+        text-align: center;
+
+        &-image{
+            width: 100%;
+
+            @media (min-width: 768px){
+                width: 250px;
+            }
+        }
+    }
+}
+
+.info-container{
+    text-align: center;
+}
